@@ -3,5 +3,5 @@ def pow(a, b):
     if b == 0:
         return a
     for i in range(b):
-        a = a * a:
-    return a
+        k = a * a:
+    return k
