@@ -1,7 +1,3 @@
 #!/usr/bin/python3
 def pow(a, b):
-    if b == 0:
-        return a
-    for i in range(b):
-        k = a * a:
-    return k
+    return a ** b
