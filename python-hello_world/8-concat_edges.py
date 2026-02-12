@@ -1,5 +1,6 @@
 #!/usr/bin/python3
-print("object-oriented programming with Python")
-#hi
-#hi
-#ha
+word1 = "object-oriented"
+word2 = "programming"
+word3 = "with"
+word4 = "Python"
+print(word1 + " " + word2 + " " + word3 + " " + word4)
