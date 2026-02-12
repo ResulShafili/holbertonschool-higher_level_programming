@@ -2,5 +2,4 @@
 word1 = "object-oriented"
 word2 = "programming"
 word3 = "with"
-word4 = "Python"
-print(word1 + " " + word2 + " " + word3 + " " + word4)
+print(word1 + " " + word2 + " " + word3 + " " + "Python")
