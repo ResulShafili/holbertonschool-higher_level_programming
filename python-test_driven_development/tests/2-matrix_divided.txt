@@ -44,9 +44,10 @@ TypeError: matrix must be a matrix (list of lists) of integers/floats
 
 Testing division by zero:
 >>> matrix_divided([[1, 2], [3, 4]], 0)
-Traceback (most recent call last):
-    ...
-ZeroDivisionError: division by zero
+    Traceback (most recent call last):
+        ...
+    ZeroDivisionError: division by zero
+
 Testing missing arguments:
 >>> matrix_divided([[1, 2]], )
 Traceback (most recent call last):
