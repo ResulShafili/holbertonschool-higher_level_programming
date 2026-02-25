@@ -74,3 +74,7 @@ class Rectangle:
     def __repr__(self):
         """shows object wıth eval."""
         return "Rectangle({:d}, {:d})".format(self.__width, self.__height)
+
+    def __del__(self):
+        """deletes rectangle"""
+        return "Bye rectangle..."
