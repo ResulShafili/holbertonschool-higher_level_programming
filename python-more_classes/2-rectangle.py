@@ -48,6 +48,7 @@ class Rectangle:
       """Area of Rectangle   (width*height)"""
       return self.__width* self.__height
     def perimeter(self):
+        """perimeter of the rectangle if h or w 0 perimeter 0 else 2*(width+height)"""
       if self.__width==0 or self.__height==0:
         return 0
       else:
