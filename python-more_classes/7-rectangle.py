@@ -7,6 +7,7 @@ Class rectangle
 class Rectangle:
     """represents Rectangle"""
     number_of_instances = 0
+    print_symbol="H"
 
     def __init__(self, width=0, height=0):
         """
@@ -68,7 +69,7 @@ class Rectangle:
 
         rect_str = ""
         for i in range(self.__height):
-            rect_str += "#" * self.__width
+            rect_str += "Rectangle.print_symbol" * self.__width
             if i < self.__height - 1:
                 rect_str += "\n"
         return rect_str
