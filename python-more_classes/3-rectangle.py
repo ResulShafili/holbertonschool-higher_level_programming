@@ -16,6 +16,15 @@ class Rectangle:
         """
         self.width = width
         self.height = height
+        """show rect"""
+        if self.width == 0 or self.height == 0:
+            print("")
+            return
+
+        for i in range(self.height):
+            for j in range(self.width):
+                print("#", end="")
+            print() 
 
     @property
     def width(self):
@@ -58,15 +67,3 @@ class Rectangle:
             return 0
         else:
             return 2 * (self.__width + self.__height)
-
-    def show_rectangle(self):
-        """show rect"""
-        if self.width == 0 or self.height == 0:
-            print("")
-            return
-
-        for i in range(self.height):
-            for j in range(self.width):
-                print("#", end="")
-            print() 
-            
