@@ -69,8 +69,8 @@ class Rectangle:
 
         rect_str = ""
         for i in range(self.__height):
-         line = str(self.print_symbol) * self.__width
-        return "\n".join([line for _ in range(self.__height)])
+            line = str(self.print_symbol) * self.__width
+            return "\n".join([line for _ in range(self.__height)])
 
     def __repr__(self):
         """shows object wıth eval."""
