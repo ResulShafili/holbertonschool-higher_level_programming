@@ -1,4 +1,11 @@
 #!/usr/bin/python3
-class Rectangle:
+"""
+Bu modul bir Rectangle (Dördbucaqlı) sinfi təyin edir.
+"""
 
-  pass
+
+class Rectangle:
+    """
+    Dördbucaqlını təmsil edən boş bir sinif.
+    """
+    pass
