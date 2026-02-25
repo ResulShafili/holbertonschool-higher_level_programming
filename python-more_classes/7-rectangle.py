@@ -7,7 +7,7 @@ Class rectangle
 class Rectangle:
     """represents Rectangle"""
     number_of_instances = 0
-    print_symbol
+    print_symbol = "#"
 
     def __init__(self, width=0, height=0):
         """
@@ -69,10 +69,8 @@ class Rectangle:
 
         rect_str = ""
         for i in range(self.__height):
-            rect_str += Rectangle.print_symbol * self.__width
-            if i < self.__height - 1:
-                rect_str += "\n"
-        return rect_str
+         line = str(self.print_symbol) * self.__width
+        return "\n".join([line for _ in range(self.__height)])
 
     def __repr__(self):
         """shows object wıth eval."""
