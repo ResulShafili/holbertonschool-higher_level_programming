@@ -7,7 +7,7 @@ class BaseGeometry:
    """
    this class is for geometry
    """
-  def area(self):
-     """
-     This function gives area
-     """
+   def area(self):
+      """
+      This function gives area
+      """
