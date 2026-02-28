@@ -2,12 +2,12 @@
 """
 This module defines a class Rectangle that inherits from BaseGeometry.
 """
-BaseGeometry = __import__('7-base_geometry').BaseGeometry
+Square = __import__('7-base_geometry').Square
 
 
-class Rectangle(BaseGeometry):
+class Rectangle(Square):
     """
-    Rectangle class that inherits from BaseGeometry.
+    Rectangle class that inherits from Square.
     """
 
     def __init__(self, width, height):
