@@ -9,8 +9,7 @@ class BaseGeometry:
     this class is for geometry
     """
     def area(self):
-       """
-       This function gives area
-       """
-       raise Exception("area() is not implemented")
-      
+        """
+        This function gives area
+        """
+        raise Exception("area() is not implemented")
