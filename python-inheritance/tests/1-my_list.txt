@@ -7,6 +7,10 @@ this is test file for task 1
 >>> my_list.append(2)
 >>> my_list.append(3)
 >>> my_list.append(5)
+>>> MyList = __import__('1-my_list').MyList
+>>> empty_list = MyList()
+>>> empty_list.print_sorted()
+[]
 >>> print(my_list)
 [1, 4, 2, 3, 5]
 >>> my_list.print_sorted()
