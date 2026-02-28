@@ -13,7 +13,6 @@ class BaseGeometry:
         This function gives area
         """
         raise Exception("area() is not implemented")
-      
     def integer_validator(self, name, value):
         """
         this area validates integer
