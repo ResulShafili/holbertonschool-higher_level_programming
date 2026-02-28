@@ -1,4 +1,4 @@
-#!/ust/bin/python3
+#!/usr/bin/python3
 """
 #Resul Shafili 
 #8-rectangle.py
