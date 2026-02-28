@@ -2,7 +2,7 @@
 """
 This module defines a class Rectangle that inherits from BaseGeometry.
 """
-Square = __import__('10-square').Square
+Rectangle = __import__('9-rectangle.py').Rectangle
 
 
 class Rectangle(Square):
