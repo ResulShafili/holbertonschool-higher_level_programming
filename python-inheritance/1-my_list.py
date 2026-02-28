@@ -1,16 +1,16 @@
 #!/usr/bin/python3
 """
-short wit inheritence 
+This module defines a class MyList that inherits from list.
 """
 
 
 class MyList(list):
     """
-    class my list
+    MyList class provides a method to print the list in sorted order.
     """
 
     def print_sorted(self):
         """
-        acsending short
+        Prints the list elements in ascending order.
         """
         print(sorted(self))
