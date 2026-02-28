@@ -1,12 +1,12 @@
 #!/usr/bin/python3
 """
-#Resul Shafili 
+#Resul Shafili
 #8-rectangle.py
-I created class Reactangle and worked some integer values 
+I created class Reactangle and worked some integer values
 """
-
-
 BaseGeometry = __import__('7-base_geometry').BaseGeometry
+
+
 class Rectangle(BaseGeometry):
     """
     Class for Rectangle which one is inherited by BaseGeometry
