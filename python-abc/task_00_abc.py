@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-import abc from ABC
+import abc from ABC, abstractmethod
 """
 this program defines sound of animals
 """
@@ -9,7 +9,7 @@ class Animal(ABC):
     this is anaimal class
     """
     @abstractmethod
-    def sound():
+    def sound(self):
         """
         this is abstarct sound metheod
         """
@@ -17,12 +17,12 @@ class Animal(ABC):
 
 class Dog(Animal):
     """this is class dog which is inherited from Animal class"""
-    def sound():
+    def sound(self):
         """this is mehtod sound for dog class"""
         return "Bark"
 
 class Cat(Animal):
     """this is class cat which is inherited from Animal class"""
-    def sound():
+    def sound(self):
         """this is mehtod sound for cat class"""
         return "Meow"
