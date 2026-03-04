@@ -11,8 +11,8 @@ class Student:
         self.age=age
 
     def class_to_json(obj):
-    """
-    return dict object
-    """
-    return obj.__dict__
+        """
+        return dict object
+        """
+        return obj.__dict__
     
