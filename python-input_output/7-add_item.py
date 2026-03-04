@@ -1,9 +1,17 @@
 #!/usr/bin/python3
-"""this is code"""
-import 5-save_to_json_file.py from save_to_json_file
-import 6-load_from_json_file.py from load_from_json_file
+"""
+Bu skript bütün arqumentləri Python siyahısına əlavə edir
+ və onları JSON faylında yadda saxlayır.
+"""
+import sys
 
 
-with open("add_item.json", "w", encoding="utf-8") as f:
-    f.save_to_json_file()
-    f.load_from_json_file()
+save_to_json_file = __import__('5-save_to_json_file').save_to_json_file
+load_from_json_file = __import__('6-load_from_json_file').load_from_json_file
+filename = "add_item.json"
+try:
+    items = load_from_json_file(filename)
+except FileNotFoundError:
+    items = []
+items.extend(sys.argv[1:])
+save_to_json_file(items, filename)
