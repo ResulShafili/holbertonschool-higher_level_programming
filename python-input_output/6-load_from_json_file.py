@@ -5,6 +5,6 @@ import json
 
 def load_from_json_file(filename):
     """convert to object method"""
-    with open(filename, "w", encoding="utf-8") as f:
+    with open(filename, "r", encoding="utf-8") as f:
         """open file"""
-        f.write(json.loads(JSON file))
+        return json.load(f)
