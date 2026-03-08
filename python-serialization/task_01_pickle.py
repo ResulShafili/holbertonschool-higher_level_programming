@@ -22,14 +22,22 @@ class CustomObject:
 
     def serialize(self, filename): 
         """this is a important method. which one is serializes our data"""
-        with open(filename, "wb") as f:
-            pickle.dump(self, f)
+        try:
+            """raise error if file is not found"""
+            with open(filename, "wb") as f:
+                pickle.dump(self, f)
+        except Exception:
+            return None
 
     @classmethod
     def deserialize(cls, filename):
         """this is a method for deserializing"""
-        with open(filename, "rb") as f:
-            x = pickle.load(f)
-        return x
+        try:
+            """raise error if file is not found"""
+            with open(filename, "rb") as f:
+                x = pickle.load(f)
+            return x
+        except (FileNotFoundError, pickle.UnpicklingError, EOFError):
+            return None
             
     
