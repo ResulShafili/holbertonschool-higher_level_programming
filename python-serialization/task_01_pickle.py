@@ -39,5 +39,3 @@ class CustomObject:
             return x
         except (FileNotFoundError, pickle.UnpicklingError, EOFError):
             return None
-            
-    
